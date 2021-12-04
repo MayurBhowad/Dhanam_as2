@@ -4,6 +4,8 @@ const connectDB = require('./config/db.config');
 require('dotenv').config()
 
 const app = express();
+const PORT = process.env.PORT || 4001;
+
 app.use(cors());
 app.use(express.json())
 
@@ -16,6 +18,6 @@ app.get('/', (req, res) => {
 
 app.use('/api', require('./routes'))
 
-app.listen(4001, () => {
+app.listen(PORT, () => {
     console.log('Listening');
 });
