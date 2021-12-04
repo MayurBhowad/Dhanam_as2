@@ -13,7 +13,7 @@ const sendMail = (to_mail) => {
         });
 
         const mailOptions = {
-            from: 'any@any.com',
+            from: process.env.AUTH_EMAIL,
             to: to_mail,
             subject: 'Register SUccessesfull!',
             html: '<div><h1>Welcome</h1><br><p>Thank you, Registration successfull!</p></div>'
