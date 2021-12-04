@@ -16,5 +16,5 @@ jobs:
 
         with:
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
-          heroku_app_name: "NPM_CONFIG_PRODUCTION=false"
+          heroku_app_name: "dhanam01"
           heroku_email: "mebmdev2020@gmail.com"
